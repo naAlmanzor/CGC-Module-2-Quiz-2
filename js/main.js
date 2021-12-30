@@ -34,18 +34,22 @@ function animate() {
 
     if (cube.position.x > 17){
         dxPerFrameX = -0.10;
+        cube.material.color.setRGB(Math.random(256), Math.random(256), Math.random(256));
     }
 
     if (cube.position.x < -17){
         dxPerFrameX = 0.10;
+        cube.material.color.setRGB(Math.random(256), Math.random(256), Math.random(256));
     }
 
     if (cube.position.y > 10){
         dxPerFrameY = -0.10;
+        cube.material.color.setRGB(Math.random(256), Math.random(256), Math.random(256));
     }
 
     if (cube.position.y < -10){
         dxPerFrameY = 0.10;
+        cube.material.color.setRGB(Math.random(256), Math.random(256), Math.random(256));
     }
 }
 animate();
